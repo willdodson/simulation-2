@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
-import auth_logo from './assets/auth_logo.png';
 import './App.css';
+import router from './router.js';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={auth_logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Houser</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+               
+                {router}
+            </div>
+        );
+    }
 }
 
 export default App;

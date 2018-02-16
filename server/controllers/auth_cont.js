@@ -8,7 +8,6 @@ module.exports = {
         })
         .catch(err => console.error(err));
     },
-
     register: (req,res,next) => {
         const {username, password} = req.body;
         const db = req.app.get('db');
@@ -19,7 +18,6 @@ module.exports = {
         })
         .catch(err => console.error(err));
     },
-
     logout: (req,res,next) => {
         res.status(200).send('Ur Dead to Me');
     }
